@@ -37,8 +37,6 @@
   "peerDependencies": {
     "prop-types": "^15.0.0",
     "preact": "*",
-    "react": "^0.14.0 || ^15.0.0",
-    "react-dom": "^0.14.0 || ^15.0.0",
     "react-sizeme": "^2.3.5"
   },
   "devDependencies": {
