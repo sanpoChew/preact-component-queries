@@ -20,15 +20,15 @@ var _reactSizeme = require('react-sizeme');
 
 var _reactSizeme2 = _interopRequireDefault(_reactSizeme);
 
-var _mergeWith = require('./utils/mergeWith');
+var _mergeWith = require('../utils/mergeWith');
 
 var _mergeWith2 = _interopRequireDefault(_mergeWith);
 
-var _getDisplayName = require('./utils/getDisplayName');
+var _getDisplayName = require('../utils/getDisplayName');
 
 var _getDisplayName2 = _interopRequireDefault(_getDisplayName);
 
-var _shallowEqual = require('./utils/shallowEqual');
+var _shallowEqual = require('../utils/shallowEqual');
 
 var _shallowEqual2 = _interopRequireDefault(_shallowEqual);
 

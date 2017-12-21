@@ -2,9 +2,9 @@ import { h, Component } from 'react'
 import PropTypes from 'prop-types'
 import invariant from 'invariant'
 import sizeMe from 'react-sizeme'
-import mergeWith from './utils/mergeWith'
-import getDisplayName from './utils/getDisplayName'
-import shallowEqual from './utils/shallowEqual'
+import mergeWith from '../utils/mergeWith'
+import getDisplayName from '../utils/getDisplayName'
+import shallowEqual from '../utils/shallowEqual'
 
 const defaultConfig = {
   monitorHeight: false,
