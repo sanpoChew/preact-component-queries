@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = require('react');
+var _preact = require('preact');
 
 var _propTypes = require('prop-types');
 
@@ -16,19 +16,19 @@ var _invariant = require('invariant');
 
 var _invariant2 = _interopRequireDefault(_invariant);
 
-var _reactSizeme = require('react-sizeme');
+var _preact2 = require('react-sizeme/preact');
 
-var _reactSizeme2 = _interopRequireDefault(_reactSizeme);
+var _preact3 = _interopRequireDefault(_preact2);
 
-var _mergeWith = require('../utils/mergeWith');
+var _mergeWith = require('./utils/mergeWith');
 
 var _mergeWith2 = _interopRequireDefault(_mergeWith);
 
-var _getDisplayName = require('../utils/getDisplayName');
+var _getDisplayName = require('./utils/getDisplayName');
 
 var _getDisplayName2 = _interopRequireDefault(_getDisplayName);
 
-var _shallowEqual = require('../utils/shallowEqual');
+var _shallowEqual = require('./utils/shallowEqual');
 
 var _shallowEqual2 = _interopRequireDefault(_shallowEqual);
 
@@ -211,7 +211,7 @@ function componentQueries() {
       }]);
 
       return ComponentWithComponentQueries;
-    }(_react.Component);
+    }(_preact.Component);
 
     ComponentWithComponentQueries.displayName = 'ComponentQueries(' + (0, _getDisplayName2.default)(WrappedComponent) + ')';
     ComponentWithComponentQueries.propTypes = {
@@ -223,7 +223,7 @@ function componentQueries() {
     ComponentWithComponentQueries.WrappedComponent = WrappedComponent;
 
 
-    return (0, _reactSizeme2.default)(sizeMeConfig)(ComponentWithComponentQueries);
+    return (0, _preact3.default)(sizeMeConfig)(ComponentWithComponentQueries);
   };
 }
 
