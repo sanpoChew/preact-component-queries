@@ -206,7 +206,7 @@ function componentQueries() {
 
           var allProps = (0, _mergeWith2.default)(this.state.queryResult, otherProps, mergeWithCustomizer);
 
-          return React.createElement(WrappedComponent, allProps);
+          return (0, _preact.h)(WrappedComponent, allProps);
         }
       }]);
 
