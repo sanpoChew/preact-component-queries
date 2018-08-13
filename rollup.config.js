@@ -29,7 +29,11 @@ module.exports = {
       babelrc: false,
       exclude: 'node_modules/**',
       presets: [['env', { modules: false }], 'stage-3', 'react'],
-      plugins: ['external-helpers', 'transform-class-properties'],
+      plugins: [
+        'external-helpers',
+        'transform-class-properties',
+        ['transform-react-jsx', { pragma: 'h' }],
+      ],
     }),
   ],
 }
