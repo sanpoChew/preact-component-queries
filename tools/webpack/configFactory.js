@@ -15,24 +15,17 @@ function webpackConfigFactory({ target }) {
     },
     output: {
       path: resolvePath(appRootDir.get(), './umd'),
-      filename: target === 'umd'
-        ? `${libraryName}.js`
-        : `${libraryName}.min.js`,
+      filename:
+        target === 'umd' ? `${libraryName}.js` : `${libraryName}.min.js`,
       library: libraryName,
       libraryTarget: 'umd',
     },
     externals: {
       react: {
-        root: 'React',
-        amd: 'react',
-        commonjs: 'react',
-        commonjs2: 'react',
-      },
-      'react-dom': {
-        root: 'ReactDOM',
-        amd: 'react-dom',
-        commonjs: 'react-dom',
-        commonjs2: 'react-dom',
+        root: 'preact',
+        amd: 'preact',
+        commonjs: 'preact',
+        commonjs2: 'preact',
       },
       'prop-types': {
         root: 'PropTypes',
@@ -40,11 +33,11 @@ function webpackConfigFactory({ target }) {
         commonjs: 'prop-types',
         commonjs2: 'prop-types',
       },
-      'react-sizeme': {
+      'preact-sizeme': {
         root: 'SizeMe',
-        commonjs2: 'react-sizeme',
-        commonjs: 'react-sizeme',
-        amd: 'react-sizeme',
+        commonjs2: 'preact-sizeme',
+        commonjs: 'preact-sizeme',
+        amd: 'preact-sizeme',
       },
     },
     plugins: removeEmpty([

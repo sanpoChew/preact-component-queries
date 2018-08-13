@@ -1,8 +1,7 @@
-import React from 'react';
-import { render } from 'react-dom';
+import { h, render } from 'preact'
 
 function App() {
-  return <div>poop</div>;
+  return <div>poop</div>
 }
 
-render(<App />, document.getElementById('app'));
+render(<App />, document.getElementById('app'))
