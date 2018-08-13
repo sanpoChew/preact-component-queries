@@ -2,9 +2,9 @@
 /* eslint-disable global-require */
 /* eslint-disable no-underscore-dangle */
 
-import React from 'react'
+import { h } from 'preact'
 import enzyme, { mount } from 'enzyme'
-import Adapter from 'enzyme-adapter-react-16'
+import Adapter from 'enzyme-adapter-preact'
 
 enzyme.configure({ adapter: new Adapter() })
 
@@ -13,7 +13,7 @@ describe('Given the ComponentQueries library', () => {
   let sizeMeConfig
 
   beforeEach(() => {
-    jest.doMock('react-sizeme', () => config => {
+    jest.doMock('preact-sizeme', () => config => {
       sizeMeConfig = config
       return x => x
     })
